@@ -63,7 +63,7 @@
 .section-work-wrapper__main {
   margin-top: 100px; }
   .section-work-wrapper__main-block {
-    height: 300px; }
+    height: 320px; }
   .section-work-wrapper__main-title {
     font-size: 20px;
     font-weight: 500;
@@ -72,3 +72,28 @@
     font-size: 15px;
     font-weight: 400;
     line-height: 1.6rem; }
+
+.section-about .section-inner {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 50px; }
+
+.section-about-wrapper__title {
+  font-size: 36px;
+  font-weight: 300;
+  text-align: center;
+  color: #000;
+  letter-spacing: -0.3px; }
+
+.section-about-wrapper .underline {
+  width: 150px;
+  height: 2px;
+  margin-top: 5px;
+  background: #8bcc25;
+  border: 0; }
+
+.section-about-wrapper__main-content {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5rem;
+  text-align: center;
+  letter-spacing: -0.3px; }
