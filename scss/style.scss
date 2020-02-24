@@ -1,9 +1,77 @@
 @import 'normalize.css';
 
+//=== Mixins ===
+
+@mixin font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+//=== / Mixins ===
+
+// === Variables ===
+
+$light-green: #8bcc25;
+
+// === / Variables ===
 
 // === SECTION SPECIAL ===
 
+.section-special {
+    .section-inner {
+        @include font-roboto;
+        margin-top: 250px;
 
+        .border {
+            margin-top: 80px;
+            width: 70%;
+            background: #ddd;
+        }
+    }
+
+    &-wrapper {
+        &__title {
+
+            font-size: 36px;
+            font-weight: 300;
+            text-align: center;
+            color: #000;
+            letter-spacing: -0.3px;
+        }
+
+        .underline {
+            width: 100px;
+            height: 2px;
+            margin-top: 5px;
+            background: $light-green;
+            border: 0;
+        }
+
+        &__main-block {
+            margin-top: 60px;
+            transition: all 0.3s ease-in-out;
+            filter: brightness(0.80);
+
+            a {
+                .desc {
+                    margin-top: 10px;
+                    font-size: 21px;
+                    font-weight: 500;
+                    text-align: center;
+                    color: #000;
+                }
+            }
+
+            a:hover {
+                text-decoration: none;
+            }
+        }
+
+        &__main-block:hover {
+           filter: brightness(1.15);
+           transition: all 0.3s ease-in-out;
+        }
+    }
+}
 
 // === / SECTION SPECIAL ===
 
